@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        
+                        <span class="icon"><ion-icon name="storefront-outline"></ion-icon></span>
+                        <span class="title">Your Shop</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                        <span class="title">Customers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="chatbox-ellipses-outline"></ion-icon></span>
+                        <span class="title">Message</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="help-circle-outline"></ion-icon></span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <span class="title">Password</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <!-- Search -->
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search Here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+
+                <!-- User Image -->
+                <div class="user">
+                    <img src="user.png" alt="User">
+                </div>
+            </div>
+
+        <!--cards-->
+        <div class="cardBox">
+            <div class="card">
+                <div>
+                    <div class="number">1,504</div>
+                    <div class="cardName">Daily Views</div>
+                </div>
+                <div class="iconBx">
+                    <ion-icon name="eye-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="number">80</div>
+                    <div class="cardName">Sales</div>
+                </div>
+                <div class="iconBx">
+                    <ion-icon name="cart-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="number">284</div>
+                    <div class="cardName">Comments</div>
+                </div>
+                <div class="iconBx">
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="number">$7842</div>
+                    <div class="cardName">Earning</div>
+                </div>
+                <div class="iconBx">
+                    <ion-icon name="wallet-outline"></ion-icon>
+                </div>
+            </div>
+        </div>  
+
+        <!-- Add Charts Section -->
+<div class="chartBox">
+    <div class="chartContainer">
+        <canvas id="barChart"></canvas>
+    </div>
+    <div class="chartContainer">
+        <canvas id="polarChart"></canvas>
+    </div>
+</div>
+            <!-- order details list -->
+            <div class="recentorders">
+                <div class="cardHeader">
+                       <h2>Recent Orders</h2>
+                       <a href="#" class="btn">View All</a>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Name</td>
+                            <td>Price</td>
+                            <td>Payment</td>
+                            <td>Status</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Star Refrigerator</td>
+                            <td>$1200</td>
+                            <td>Paid</td>
+                            <td><span class="statusdelivered">Delivered</span></td>
+                        </tr>
+                        <!-- Order Details -->
+<table>
+    <tr>
+      <td>Window Cooler</td>
+      <td>$110</td>
+      <td>Due</td>
+      <td><span class="status pending">Pending</span></td>
+    </tr>
+    <tr>
+      <td>Speakers</td>
+      <td>$620</td>
+      <td>Paid</td>
+      <td><span class="status return">Return</span></td>
+    </tr>
+    <tr>
+      <td>HP Laptop</td>
+      <td>$1100</td>
+      <td>Due</td>
+      <td><span class="status inprogress">In Progress</span></td>
+    </tr>
+    <tr>
+      <td>Apple Watch</td>
+      <td>$1200</td>
+      <td>Paid</td>
+      <td><span class="status paid">Paid</span></td>
+    </tr>
+    <tr>
+      <td>Gaming Chair</td>
+      <td>$250</td>
+      <td>Due</td>
+      <td><span class="status pending">Pending</span></td>
+    </tr>
+    <tr>
+      <td>Headphones</td>
+      <td>$80</td>
+      <td>Paid</td>
+      <td><span class="status paid">Paid</span></td>
+    </tr>
+    <tr>
+      <td>Smartphone</td>
+      <td>$800</td>
+      <td>Due</td>
+      <td><span class="status inprogress">In Progress</span></td>
+    </tr>
+    <tr>
+      <td>Desk Lamp</td>
+      <td>$40</td>
+      <td>Paid</td>
+      <td><span class="status paid">Paid</span></td>
+    </tr>
+  
+                    </tbody>
+                </table>
+            </div>
+
+            <!--New Customers-->
+            <div class="recentCustomers">
+                <div class="cardHeader">
+                    <h2>Recent Customers</h2>
+                </div>
+                <table>
+                    <tr>
+                        <td width="60px"><div class="imgBx"><img src="image1.jpg"></div></td>
+                        <td><h4>David<br><span>Italy</span></h4></td>
+                        <td>
+                            <h4>David<br><span>(4.2 Star)</span></h4>
+                            <div class="rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half"></ion-icon>
+
+                                <td>
+                                    <button class="message-btn">Message</button>
+                                </td>
+                                
+
+                                <td>
+                                    <small>Customer since: Jan 2022</small>
+                                </td>
+                            </div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td width="60px"><div class="imgBx"><img src="image3.jpg"></div></td>
+                        <td><h4>Liam Johnson<br><span>United States</span></h4></td>
+                        <td>
+                            <h4>Liam Johnson<br><span>(4.5 Star)</span></h4>
+                            <div class="rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half"></ion-icon>
+
+                                <td>
+                                    <button class="message-btn">Message</button>
+                                </td>
+                                
+
+                                <td>
+                                    <small>Customer since: Nov 2015</small>
+                                </td>
+                            </div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td width="60px"><div class="imgBx"><img src="image2.jpg"></div></td>
+                        <td><h4>Sophia Martinez<br><span> Spain</span></h4></td>
+                        <td>
+                            <h4>Sophia Martinez<br><span>(4.1 Star)</span></h4>
+                            <div class="rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half"></ion-icon>
+
+                                <td>
+                                    <button class="message-btn">Message</button>
+                                </td>
+                                
+
+                                <td>
+                                    <small>Customer since: Sep 2020</small>
+                                </td>
+                            </div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td width="60px"><div class="imgBx"><img src="image4.jpg"></div></td>
+                        <td><h4>Isabella Silva<br><span>Brazil</span></h4></td>
+                        <td>
+                            <h4>Isabella Silva<br><span>(4.6 Star)</span></h4>
+                            <div class="rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half"></ion-icon>
+
+                                <td>
+                                    <button class="message-btn">Message</button>
+                                </td>
+                                
+
+                                <td>
+                                    <small>Customer since: Jun 2024</small>
+                                </td>
+                            </div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td width="60px"><div class="imgBx"><img src="image5.jpg"></div></td>
+                        <td><h4>Noah Kim<br><span>South Korea</span></h4></td>
+                        <td>
+                            <h4>Noah Kim<br><span>(4.2 Star)</span></h4>
+                            <div class="rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half"></ion-icon>
+
+                                <td>
+                                    <button class="message-btn">Message</button>
+                                </td>
+                                
+
+                                <td>
+                                    <small>Customer since: Aug 2017</small>
+                                </td>
+                            </div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td width="60px"><div class="imgBx"><img src="image7.jpg"></div></td>
+                        <td><h4>Olivia Smith<br><span>Canada</span></h4></td>
+                        <td>
+                            <h4>Olivia Smith<br><span>(4.8 Star)</span></h4>
+                            <div class="rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half"></ion-icon>
+
+                                <td>
+                                    <button class="message-btn">Message</button>
+                                </td>
+                                
+
+                                <td>
+                                    <small>Customer since: May 2019</small>
+                                </td>
+                            </div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td width="60px"><div class="imgBx"><img src="image6.jpg"></div></td>
+                        <td><h4>James Brown<br><span>United Kingdom</span></h4></td>
+                        <td>
+                            <h4>James Brown<br><span>(4.7 Star)</span></h4>
+                            <div class="rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half"></ion-icon>
+
+                                <td>
+                                    <button class="message-btn">Message</button>
+                                </td>
+                                
+
+                                <td>
+                                    <small>Customer since: Jan 2023</small>
+                                </td>
+                            </div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td width="60px"><div class="imgBx"><img src="image8.jpg"></div></td>
+                        <td><h4>Lucas Dubois<br><span>France</span></h4></td>
+                        <td>
+                            <h4>Lucas Dubois<br><span>(4.1 Star)</span></h4>
+                            <div class="rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half"></ion-icon>
+
+                                <td>
+                                    <button class="message-btn">Message</button>
+                                </td>
+                                
+
+                                <td>
+                                    <small>Customer since: Feb 2020</small>
+                                </td>
+                            </div>
+                        </td>
+
+                    </tr>
+                </table>
+
+            </div>
+
+         </div>
+
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script src="my_chart.js"></script>
+
+    <script>
+        // MenuToggle
+        let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+
+        toggle.onclick = function(){
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+
+        // Add hovered class in selected list item
+        let list = document.querySelectorAll('.navigation li');
+        function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('hovered'));
+            this.classList.add('hovered');
+        }
+        list.forEach((item) =>
+        item.addEventListener('mouseover', activeLink));
+    </script>
+<script src="script.js"></script>
+</body>
+</html>
